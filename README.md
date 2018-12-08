@@ -4,6 +4,12 @@ An utility to collect logs.
 
 In the last weeks I've found myself using `logrotate` to organize log files of some scripts and tools... It's easy and flexible, but I find it a bit cumbersome: create a configuration file, create a `cron` entry... so I decided to code my own tool (mainly because I wanted to practice a bit with Go). `loco` capures standard out and redirect it to a file, rotating it at a specified interval.
 
+# Installation
+
+```bash
+go get github.com/lorenzobenvenuti/loco/cmd/loco
+```
+
 # Usage
 
 In its simpler form you can use `loco` like this:
